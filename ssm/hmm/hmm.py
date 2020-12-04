@@ -138,7 +138,7 @@ class HMM(object):
                    transitions=transitions,
                    observations=observations)
 
-    def _build_initial_state(self, num_states,
+    def _initial_state(self, num_states,
                               initial_state,
                               **initial_state_kwargs):
         """Helper function to construct initial state distribution
@@ -307,7 +307,7 @@ class HMM(object):
         """
         posteriors = [HMMPosterior(self, data_dict) for data_dict in dataset]
         lp = self.log_prior()
-        lp += np.sum([p.marginal_likelihood() for p in posteriors])
+        lp += sum([p.marginal_likelihood() for p in posteriors])
         return lp / num_datapoints(dataset), posteriors
 
     def sample(self, rng, num_timesteps, prefix=None, covariates=None, **kwargs):

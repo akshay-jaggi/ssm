@@ -8,6 +8,6 @@ setup(name='ssm',
       author='Scott Linderman',
       author_email='scott.linderman@stanford.edu',
       url='https://github.com/lindermanlab/ssm',
-      install_requires=['numpy', 'scipy', 'matplotlib', 'scikit-learn', 'tqdm', 'seaborn', 'jax', 'jaxlib'],
+      install_requires=['numpy', 'scipy', 'matplotlib', 'scikit-learn', 'tqdm', 'seaborn', 'jax', 'jaxlib', 'numba'],
       packages=['ssm', 'ssm.hmm'],
-    )
+      )

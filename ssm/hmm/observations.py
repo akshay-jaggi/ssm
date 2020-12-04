@@ -9,6 +9,8 @@ import jxf.distributions as dists
 
 from ssm.util import format_dataset, num_datapoints
 
+from numba import jit
+
 @register_pytree_node_class
 class Observations(object):
     """

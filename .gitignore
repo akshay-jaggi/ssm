@@ -116,3 +116,7 @@ notebooks/*.html
 .vscode
 
 .DS_Store
+
+.idea
+notebooks/pca.h5
+notebooks/pca_scores.h5
