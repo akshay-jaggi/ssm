@@ -138,7 +138,7 @@ class HMM(object):
                    transitions=transitions,
                    observations=observations)
 
-    def _initial_state(self, num_states,
+    def _build_initial_state(self, num_states,
                               initial_state,
                               **initial_state_kwargs):
         """Helper function to construct initial state distribution
